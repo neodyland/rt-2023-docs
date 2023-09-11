@@ -4,6 +4,7 @@
 # Generated files
 .docusaurus
 .cache-loader
+dist
 
 # Misc
 .DS_Store
