@@ -1,0 +1,16 @@
+{
+  "name": "rt-2023-docs",
+  "type": "module",
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "@astrojs/starlight": "^0.9.1",
+    "astro": "^3.0.0"
+  }
+}
