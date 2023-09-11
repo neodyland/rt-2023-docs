@@ -16,7 +16,7 @@ const config = {
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'RextTeam', // Usually your GitHub org/user name.
+  organizationName: 'aoharu-io', // Usually your GitHub org/user name.
   projectName: 'RT', // Usually your repo name.
 
   // Even if you don't use internalization, you can use this field to set useful
@@ -37,14 +37,14 @@ const config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/RextTeam/rt-docs/tree/main/docs',
+            'https://github.com/aoharu-io/rt-2023-docs/tree/main/docs',
         },
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/RextTeam/rt-docs/tree/main/blog',
+            'https://github.com/aoharu-io/rt-2023-docs/tree/main/blog',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
@@ -80,7 +80,7 @@ const config = {
             position: 'right'
           },
           {
-            href: 'https://github.com/RextTeam/rt-docs',
+            href: 'https://github.com/aoharu-io/',
             label: 'GitHub',
             position: 'right',
           },
@@ -110,10 +110,6 @@ const config = {
                 label: 'Discord',
                 href: 'https://discord.gg/sgFjMjdnR9',
               },
-              {
-                label: 'Twitter',
-                href: 'https://twitter.com/tasuren1',
-              },
             ],
           },
           {
@@ -125,16 +121,12 @@ const config = {
               },
               {
                 label: 'GitHub',
-                href: 'https://github.com/RextTeam/rt-bot',
-              },
-              {
-                label: 'Crowdin',
-                href: 'https://crowdin.com/project/rt-docs',
+                href: 'https://github.com/orgs/aoharu-io/teams/rt-dev',
               },
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} RextTeam and tuna2134 Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} AoHaru I/O and tuna2134 Built with Docusaurus.`,
       },
       prism: {
         theme: lightCodeTheme,
