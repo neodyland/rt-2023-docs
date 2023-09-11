@@ -3,6 +3,7 @@ import starlight from "@astrojs/starlight";
 
 // https://astro.build/config
 export default defineConfig({
+  site: "https://docs.rt.rext.dev",
   integrations: [
     starlight({
       title: "RT 2023 Documents",
