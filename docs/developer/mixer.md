@@ -3,7 +3,7 @@ sidebar_position: 4
 ---
 
 # Mixer
-Mixerは名前の通りミキサーのことで、rt-botリポジトリの`core.mixer_pool`に実装されています。  
+Mixerは名前の通りミキサーのことで、rt-2023-botリポジトリの`core.mixer_pool`に実装されています。  
 これは、簡単に複数の音声を再生するためのものです。  
 `core.mixer_pool.MixerPool.acquire`でこのミキサーオブジェクトを取得してください。  
 ミキサーオブジェクトの使用が終了した場合は、`MixerPool.release`で返却を行なってください。  

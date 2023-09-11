@@ -14,8 +14,8 @@ RTでは、データベース(mysql)を簡単に操作するためのもので�
 ```python
 from rtlib.common.database import DatabaseManager, cursor
 ```
-### rt-botリポジトリ
-rt-libに`DatabaseManager`はありますが、rt-botリポジトリでは簡単にimportできるように、`core`からimportできるようにしています。  
+### rt-2023-botリポジトリ
+rt-libに`DatabaseManager`はありますが、rt-2023-botリポジトリでは簡単にimportできるように、`core`からimportできるようにしています。  
 以下のようにimportしてください。
 ```python
 from core import DatabaseManager, cursor
@@ -36,7 +36,7 @@ class DataManager(DatabaseManager):
     def __init__(self, pool: Pool):
         self.pool = pool
 ```
-もし、rt-botリポジトリでDataManagerを作る場合は、`aiomysql.Pool`を受け取る引数をコンストラクタに作るのではなく、そのDataManagerを使用するコグのインスタンスを受け取るようにしてください。  
+もし、rt-2023-botリポジトリでDataManagerを作る場合は、`aiomysql.Pool`を受け取る引数をコンストラクタに作るのではなく、そのDataManagerを使用するコグのインスタンスを受け取るようにしてください。  
 そして、コグにあるBotの参照からプールのインスタンスを代入してください。
 ```python
 class DataManager(DatabaseManager):
@@ -82,8 +82,8 @@ CREATE TABLE IF NOT EXISTS テーブル名 (コラム, ...);
 > `IF NOT EXISTS`
 
 を置くことで、存在しない場合のみテーブルを作るように実行することができます。
-#### rt-botリポジトリの場合
-rt-botのプログラムで`prepare_table`を起動時に実行するようにする場合は、コグの`cog_load`メソッドから実行するようにしてください。
+#### rt-2023-botリポジトリの場合
+rt-2023-botのプログラムで`prepare_table`を起動時に実行するようにする場合は、コグの`cog_load`メソッドから実行するようにしてください。
 
 ### SQLを実行しないコルーチン関数
 SQLを実行しないコルーチン関数を作る場合は、`DatabaseManager.ignore`というデコレータを必ず付けてください。  
@@ -102,8 +102,8 @@ async def update_caches(self) -> None:
         self.caches[row[0]] = row[1:]
 ```
 
-### rt-botリポジトリ限定
-rt-botリポジトリ限定でDataManagerに実装すべき関数や考慮すべきことがあります。  
+### rt-2023-botリポジトリ限定
+rt-2023-botリポジトリ限定でDataManagerに実装すべき関数や考慮すべきことがあります。  
 それは、`update_caches`と`clean`です。  
 それについてをここに書きます。
 #### DataManagerのインスタンスを置く場所
